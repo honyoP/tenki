@@ -1,0 +1,17 @@
+[package]
+name = "tenki-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Core library for tenki: markdown parsing, wikilink extraction, and backlink graph"
+
+[dependencies]
+pulldown-cmark.workspace = true
+petgraph.workspace = true
+thiserror.workspace = true
+regex.workspace = true
+walkdir.workspace = true
+
+[dev-dependencies]
+tempfile = "3.18"

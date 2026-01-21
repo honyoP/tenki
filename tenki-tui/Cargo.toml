@@ -1,0 +1,18 @@
+[package]
+name = "tenki-tui"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "TUI binary for tenki knowledge management system"
+
+[[bin]]
+name = "tenki"
+path = "src/main.rs"
+
+[dependencies]
+tenki-core = { path = "../tenki-core" }
+ratatui.workspace = true
+crossterm.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
